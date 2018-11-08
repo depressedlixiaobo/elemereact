@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import ShopItem from '../components/ShopItem'
+
 
 class App extends Component {
     constructor(props) {
@@ -40,20 +42,11 @@ class App extends Component {
                      <div >筛选</div>
                  </aside>
                  <section className='shoplist'>
-                     <section className='shop-store'>
-                      <div className='store-info'>
-                         <div className='store-logo'>
-
-                         </div>
-                         <div class="store-desc">
-                            <div className='desc1'>恋尚鲜花(上海店)</div>
-                            <div className='desc2'>第二条</div>
-                            <div className='desc3'>第三条</div>
-                            
-                         </div>
-                      </div>
-                      <div className='store-extra'>第二行</div>
-                     </section>
+                    {
+                        [1,2,3,4,5,6,7,8,9].map((item,index)=>(
+                            <ShopItem key={index} />
+                        ))
+                    }
                  </section>
                  </React.Fragment>
                  
