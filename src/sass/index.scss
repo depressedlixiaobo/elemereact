@@ -6,6 +6,9 @@ body{
 .pd15{
     padding: 0 15px 0 15px;
 }
+.boder-b1{
+    border-bottom: 1px solid #eee;
+}
 
  .header{
     background-image: linear-gradient(90deg,#0af,#0085ff);
@@ -102,12 +105,42 @@ body{
 
 $side_fontSize : 2.5rem;
 .sidebar{
-    @extend .pd15;
+    //@extend .pd15;
     position: sticky;
-    top:5.6rem;
+   // top:5.6rem;
+   top:calc(3rem + 30px);
     z-index: 999;
     background: $bgColor;
     color: #aaa;
+    @extend .boder-b1;
+    .sd-active{
+        font-weight: 700;
+    }
+    .cate-sort{
+        position: absolute;
+        top: 2.5rem;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        .sort-list{
+           // display: none;
+           //
+            li{
+                font-size: 1.4rem;
+                padding: 10px 0 10px 15px;;
+                
+            }
+            .liactive{
+                color: #3190e8;
+                font-weight: 700;
+            }
+           @extend .boder-b1;
+        }
+    }
+}
+.sidebar-box{
+    @include clearfix;
+    position: relative;
     div{
         float: left;
         width: 25%;
@@ -115,11 +148,8 @@ $side_fontSize : 2.5rem;
         height: $side_fontSize;
         line-height: $side_fontSize;
     }
-    .sd-active{
-        font-weight: 700;
-    }
-    @include clearfix;
 }
+
 
 .shoplist {
     // display: flex;

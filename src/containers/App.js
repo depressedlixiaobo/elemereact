@@ -36,11 +36,23 @@ class App extends Component {
                      商家推荐
                  </div>
                  <aside className='sidebar'>
-                     <div className='sd-active'>综合排序</div>
-                     <div>距离最近</div>
-                     <div>品质联盟</div>
-                     <div >筛选</div>
+                    
+                    <section className='sidebar-box'>
+                        <div className='sd-active'>综合排序</div>
+                        <div>距离最近</div>
+                        <div>品质联盟</div>
+                        <div >筛选</div>
+                        <section className='cate-sort'>
+                                 <ul className='sort-list'>
+                                     <li className='liactive'>综合排序</li>  
+                                     <li>好评优先</li>
+                                     <li>销量优先</li>
+                                 </ul>
+                        </section>
+                    </section>
+                   
                  </aside>
+                 
                  <section className='shoplist'>
                     {
                         [1,2,3,4,5,6,7,8,9].map((item,index)=>(
