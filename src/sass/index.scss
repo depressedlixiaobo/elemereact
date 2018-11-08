@@ -1,5 +1,8 @@
 @import './base';
-
+$bgColor :#fff;
+body{
+    font-size: 1.6rem;
+}
 .pd15{
     padding: 0 15px 0 15px;
 }
@@ -12,47 +15,147 @@
         color: white;
         line-height: 2.5;
     }
-    .search{
-        @extend .pd15;
-        padding-bottom: 15px;
-        .search-box{
-            height: 3rem;
-            width: 100%;
-            background: white;
-            text-align: center;
-            line-height:3rem;
-            color: gray;
-            // &:after{
-            //     content: ".";
-            //     visibility:hidden;
-            //     width: 100%;
-            //     height: 1rem;
-            // }
-        }
-       
-    }
-    
-    
  }
+ .search{
+    background-image: linear-gradient(90deg,#0af,#0085ff);
+    padding:15px ;
+    z-index: 999;
+    position: sticky;
+    top:0rem;
+    .search-box{
+        height: 3rem;
+        width: 100%;
+        background: white;
+        text-align: center;
+        line-height:3rem;
+        color: gray;
+        // &:after{
+        //     content: ".";
+        //     visibility:hidden;
+        //     width: 100%;
+        //     height: 1rem;
+        // }
+    }
+   
+}
  .swipper{
     height: 15rem;
     background: #eee;
     
 }
-.ads{
+@mixin clearfix {
+    &::after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+}
+.banner{
     @extend .pd15;
-  
-    .adsbox{
+    
+    .banner-box{
         float: left;
-        background: #000;
+       
         height: 3rem;
         width: 50%;
+        
+    }
+    &:after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        clear: both;
     }
     .rd-border{
         padding-right: 2px;
-        border-right: 2px solid #ffffff;
+        border-right: 2px solid #fff;
     }
 }
-div {
-    font-size:2rem;
+@mixin  line-style {
+       display: block;
+        height: 1px;
+        width: 2rem;
+        content: " ";
+        top:50%;
+        position: absolute;
+        background: #aaa;
+}
+// 商家推荐
+.sjtj{
+    text-align: center;
+    line-height: 1.6rem;
+    position: relative;
+    padding: 1rem 0 1rem 0;
+    &::before{
+        @include line-style;
+       
+        margin-left: 10rem;
+    }
+    &::after{
+        @include line-style;
+        right: 0;
+        margin-right: 10rem;
+    }
+}
+
+$side_fontSize : 2.5rem;
+.sidebar{
+    @extend .pd15;
+    position: sticky;
+    top:5.6rem;
+    z-index: 999;
+    background: $bgColor;
+    div{
+        float: left;
+        width: 25%;
+        text-align: center;
+        height: $side_fontSize;
+        line-height: $side_fontSize;
+    }
+    .sd-active{
+        font-weight: 700;
+    }
+    @include clearfix;
+}
+
+.shoplist {
+    // display: flex;
+    @extend .pd15;
+    background: #eee;
+    height: 200rem;
+    .shop-store {
+        display: flex;
+        flex-wrap: wrap;
+        .store-info{
+            width: 100%;
+            display: inherit;
+            .store-logo{
+                width: 6rem;
+                height: 10rem;
+                background: #000;
+            }
+            .store-desc{
+                padding-left: .5rem;
+                display: inherit;
+                flex-flow: column;
+                justify-content: space-between;
+                .desc1{
+                   font-weight: 800;
+                }
+                .desc2{
+
+                }
+                .desc3{
+
+                }
+                
+            }
+        }
+        .store-extra{
+            width: 100%;
+        }
+    }
+    
 }

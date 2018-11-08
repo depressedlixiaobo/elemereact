@@ -1,16 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-.clearfix{
-    &:after{
-        content:".";        
-        display:block;        
-        height:0;        
-        clear:both;             
-       }
-}
+

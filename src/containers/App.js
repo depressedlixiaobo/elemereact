@@ -13,22 +13,48 @@ class App extends Component {
                      <div className='location'>
                          上海市人民广场...
                      </div>
-                     <div className='search'>
+                    
+                 </header>
+                 <div className='search'>
                         <div className='search-box'>sfsfsf</div>
                      </div>
-                 </header>
                  <div className='swipper'>
                  1
 
                  </div>
-                 <div className='ads'>
-                    <div className='adsbox rd-border'>
+                 <div className='banner'>
+                    <div className='banner-box rd-border'>
                         11
                     </div> 
-                    <div className='adsbox'>
+                    <div className='banner-box'>
                         222
                     </div> 
                  </div>
+                 <div className='sjtj'>
+                     商家推荐
+                 </div>
+                 <aside className='sidebar'>
+                     <div className='sd-active'>综合排序</div>
+                     <div>距离最近</div>
+                     <div>品质联盟</div>
+                     <div >筛选</div>
+                 </aside>
+                 <section className='shoplist'>
+                     <section className='shop-store'>
+                      <div className='store-info'>
+                         <div className='store-logo'>
+
+                         </div>
+                         <div class="store-desc">
+                            <div className='desc1'>恋尚鲜花(上海店)</div>
+                            <div className='desc2'>第二条</div>
+                            <div className='desc3'>第三条</div>
+                            
+                         </div>
+                      </div>
+                      <div className='store-extra'>第二行</div>
+                     </section>
+                 </section>
                  </React.Fragment>
                  
         );
