@@ -10,7 +10,6 @@ class Store extends Component {
             <React.Fragment>
                <header className='store-header'>
                     <div className='hdbanner'></div>
-                     
                     <div className="storedesc">
                             <div className="store-title"> <h2>瓦香鸡米饭(南京东路店)</h2></div>
                             <div className='store-title-desc'>
@@ -118,6 +117,31 @@ class Store extends Component {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="store-list">
+                        <ul className='store-side'>
+                            <li>特价鸡米饭</li>
+                            <li>饿了么红包</li>
+                            <li>双人套餐</li>
+                            <li>新品（特价）尝鲜</li>
+                            <li>饮料</li>
+                        </ul>
+                        <dl>
+                            {
+                                [1,2,3,4,5,6,7,8,9,10].map((t,index)=>(
+                                    <dt>
+                                        <div className='p-img'> <img src="//fuss10.elemecdn.com/2/85/4bd3e1f30c133edaac2168a58ef18jpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/" alt="" /> </div>
+                                        <div className='prodcut-desc'>
+                                            <div className='p-desc1'>瓦香鸡（微辣）+米饭+可口可乐</div>
+                                            <div className='p-desc2'>鸡腿肉搭配洋葱，大葱一起爆炒主要原料: 鸡肉</div>
+                                            <div className='p-desc2'>月售800份 好评率98%</div>
+                                            <div className='p-desc3'>4.8折</div>
+                                            <div className='p-price'>￥18.8  <del>¥38.8</del></div>
+                                        </div>
+                                    </dt>
+                                ))
+                            }
+                        </dl>
                     </div>
                </header>
             </React.Fragment>
