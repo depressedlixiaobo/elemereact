@@ -1,5 +1,102 @@
-@import './base'
+@import './base';
 
-.nav{
+.store-header{
+    .hdbanner{
+        background-image: url('https://fuss10.elemecdn.com/4/ea/3ba6162582331123e0b6cee35c9b8png.png?imageMogr/format/webp/thumbnail/750x/');
+        height: 10rem;
+        background-position:50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .storedesc{
+        text-align: center;
+        padding-top: 2rem;
+         .store-title{
+ 
+         }
+         .store-title-desc{
+           font-size: 1rem;
+           color: gray;
+           padding: 5px 0 5px 0;
+           >span::after{
+               content: ' \B7   ';
+               opacity: .1;
+               
+           }
+            
+            
+        } 
+        .store-mj{
+            font-size: 1rem;
+            padding-bottom: 2rem;
+            .mj-list{
+                padding: 3px 0 3px 0;
+            }
+            p{
+                color: gray;
+            }
+        }
+    }
+    .storetab{
+      //  @extend .pd15;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        height: 3rem;
+        
+        div{
+            text-align: center;
+            flex-grow: 3;
+            line-height: 3rem;
+            color: #666;
+           
+        }
+        .tab-active{
+            color: #333;
+            font-weight: 700;
+            border-bottom: .2rem solid #2395ff;
+            height: 100%;
+            display: inline-block;
+          }
+    }
+    .store-sjtj{
+       
+        padding-top: 15px;
+        >p:nth-child(1){ 
+            font-weight: 700;
+            //@extend .pd15;
+            padding:0 15px 15px 15px;
+        }
+        .tjbanner{
+           
+            display: flex;
+            overflow-x: scroll;
+            
+            .fdbox{
+                //height: 18rem;
+                padding-bottom: 1rem;
+                flex-shrink: 0;
+                width: 12rem;
+                border-radius: 3px;
+                padding-right: 1rem;
+                .foodimg{
+                    background: #eee;
+                    img{
+                        width: 100%;
+                        height: 12rem;
+                    }
+                }
+                .food-desc{
+                    .fdcomment{
+                        color: #999;
+                        font-size: .8rem;
+                    }
+                    .fdprice{
+                        color:rgb(255, 83, 57);
+                    }
+                }
+            }
+        }
+    }
     
 }
