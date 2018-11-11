@@ -39,148 +39,153 @@
             }
         }
     }
-    // 商店 tab 框
-    .storetab{
-      //  @extend .pd15;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        height: 3rem;
-        background: #fff;
-        position: sticky;
-        top:0;
-        z-index: 999;
-        div{
-            text-align: center;
-            flex-grow: 3;
-            line-height: 3rem;
-            color: #666;
-           
-        }
-        .tab-active{
-            color: #333;
-            font-weight: 700;
-            border-bottom: .2rem solid #2395ff;
-            height: 100%;
-            display: inline-block;
-          }
-    }
-    // 商家推荐
-    .store-sjtj{
-       
-        padding-top: 15px;
-        >p:nth-child(1){ 
-            font-weight: 700;
-            //@extend .pd15;
-            padding:0 15px 15px 15px;
-        }
-        .tjbanner{
-           
-            display: flex;
-            overflow-x: scroll;
-            
-            .fdbox{
-                //height: 18rem;
-                padding-bottom: 1rem;
-                flex-shrink: 0;
-                width: 12rem;
-                border-radius: 3px;
-                padding-right: 1rem;
-                .foodimg{
-                    background: #eee;
-                    img{
-                        width: 100%;
-                        height: 12rem;
-                    }
-                }
-                .food-desc{
-                    .fdcomment{
-                        color: #999;
-                        font-size: .8rem;
-                    }
-                    .fdprice{
-                        color:rgb(255, 83, 57);
-                    }
-                }
-            }
-        }
-    }
-    .store-list{
-        display: flex;
-        position: sticky;
-        top: 3rem;
-        background: #fff;
-        .store-side{
-            
-            flex-grow: 1;
-            flex-shrink: 0;
-            width: 6rem;
-            font-size: 1.3rem;
-            color:#999;
-            li{
-                padding: 1rem 0 1rem 5px;
-                cursor: pointer;
-            }
-        }
-        dl{
-            flex-grow: 10;
-            padding-left: .5rem;
-            justify-content: start;
-            display: flex;
-            flex-flow: column wrap;
-            dt{
-                flex-grow: 1;
-                display: flex;
-                height: 10rem;
-                padding: .5rem 0 .5rem 0;
-                .p-img{
-                    flex-shrink: 0;
-                    width: 10rem;
-                    
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        border-radius:5px;
-                    }
-                }
-                .prodcut-desc{
-                    flex-grow: 1;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    >div{
-                        padding-left: .5rem;
-                        width: 13rem;
-                        height: 2rem;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        display:block;
-                        text-overflow: ellipsis;
-                        
-                    }
-                    .p-desc1{
-                        font-weight: 700;
-                    }
-                    .p-desc2{
-                        font-size: 1rem;
-                        color: #999;
-                    }
-                    .p-desc3{
-                        font-size: 1rem;
-                        color:#eb6551;
-                    }
-                    .p-price{
-                        color:rgb(255, 83, 57);
-                        del{
-                            color:#999;
-                        }
-                    }
-                }
-            }
-        }
-        // .list-wapper{
-        //     flex-grow: 1;
-            
-        // }
-        
-    }
+  
 }
+  // 商店 tab 框
+  .storetab{
+    //  @extend .pd15;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      height: 3rem;
+      background: #fff;
+      position: sticky;
+      top:0;
+      z-index: 999;
+      div{
+          text-align: center;
+          flex-grow: 3;
+          line-height: 3rem;
+          color: #666;
+         
+      }
+      .tab-active{
+          color: #333;
+          font-weight: 700;
+          border-bottom: .2rem solid #2395ff;
+          height: 100%;
+          display: inline-block;
+        }
+  }
+  // 商家推荐
+  .store-sjtj{
+     
+      padding-top: 15px;
+      >p:nth-child(1){ 
+          font-weight: 700;
+          //@extend .pd15;
+          padding:0 15px 15px 15px;
+      }
+      .tjbanner{
+         
+          display: flex;
+          overflow-x: scroll;
+          
+          .fdbox{
+              //height: 18rem;
+              padding-bottom: 1rem;
+              flex-shrink: 0;
+              width: 12rem;
+              border-radius: 3px;
+              padding-right: 1rem;
+              .foodimg{
+                  background: #eee;
+                  img{
+                      width: 100%;
+                      height: 12rem;
+                  }
+              }
+              .food-desc{
+                  .fdcomment{
+                      color: #999;
+                      font-size: .8rem;
+                  }
+                  .fdprice{
+                      color:rgb(255, 83, 57);
+                  }
+              }
+          }
+      }
+  }
+  .store-list{
+      display: flex;
+      position: sticky;
+      top: 5rem;
+      //安卓4.3及以前 需要 写个js兼容包
+       height: calc(100vh - 3rem);
+      background: #fff;
+      .store-side{
+          
+          flex-grow: 1;
+          flex-shrink: 0;
+          width: 6rem;
+          font-size: 1.3rem;
+          color:#999;
+          li{
+              padding: 1rem 0 1rem 5px;
+              cursor: pointer;
+          }
+      }
+      dl{
+          //flex-grow: 10;
+          padding-left: .5rem;
+          overflow: scroll;
+         // justify-content: start;
+         // display: flex;
+          //flex-flow: column nowrap;
+          dt{
+              flex-grow: 1;
+              display: flex;
+              height: 10rem;
+
+              padding: .5rem 0 .5rem 0;
+              .p-img{
+                  flex-shrink: 0;
+                  width: 10rem;
+                  
+                  img{
+                      width: 100%;
+                      height: 100%;
+                      border-radius:5px;
+                  }
+              }
+              .prodcut-desc{
+                  flex-grow: 1;
+                  display: flex;
+                  flex-flow: column nowrap;
+                  >div{
+                      padding-left: .5rem;
+                      width: 13rem;
+                      height: 2rem;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      display:block;
+                      text-overflow: ellipsis;
+                      
+                  }
+                  .p-desc1{
+                      font-weight: 700;
+                  }
+                  .p-desc2{
+                      font-size: 1rem;
+                      color: #999;
+                  }
+                  .p-desc3{
+                      font-size: 1rem;
+                      color:#eb6551;
+                  }
+                  .p-price{
+                      color:rgb(255, 83, 57);
+                      del{
+                          color:#999;
+                      }
+                  }
+              }
+          }
+      }
+      // .list-wapper{
+      //     flex-grow: 1;
+          
+      // }
+      
+  }

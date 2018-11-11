@@ -9,6 +9,31 @@
 html {
     font-size: 62.5%;
 }
+@media  only screen and (max-width :320px){
+    html {
+        
+        font-size: 50%;
+    }
+}
+ 
+@media  only screen and (min-width :414px){
+    html {
+         
+        font-size: 67.5%;
+    }
+}
+@media  only screen and (min-width :768px){
+    html {
+       
+        font-size: 123%;
+    }
+}
+@media  only screen and (min-width :1024px){
+    html {
+        
+        font-size: 186.5%;
+    }
+}
 ul {
     list-style-type: none;
 }

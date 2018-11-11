@@ -27,7 +27,10 @@ class Store extends Component {
 
                           
                     </div>
-                    <div className='storetab'>
+
+                   
+               </header>
+               <div className='storetab'>
                         <div ><span className='tab-active'>点餐</span></div>
                         <div><span  >评价</span></div>
                         <div><span>商家</span></div>
@@ -143,7 +146,7 @@ class Store extends Component {
                             }
                         </dl>
                     </div>
-               </header>
+                  
             </React.Fragment>
         );
     }
