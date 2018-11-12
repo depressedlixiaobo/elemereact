@@ -157,7 +157,25 @@ class Store extends Component {
                         </dl>
                     </div>
                   
-                   
+                   <div className='store-car'>
+                            <div className='car-title'>
+                                 满25减17元，满40减21元，满60减24元
+                            </div>
+                            <div className='car-content'>
+                                <div className='car-logo'>
+                                    
+                                </div>
+                                 <div className='show'>
+                                     为选购商品
+                                     <div>
+                                     另需配送费5元
+                                     </div>
+                                 </div>
+                                 <div className='total'>
+                                     ￥15起送
+                                 </div>
+                            </div>
+                   </div>
             </React.Fragment>
         );
     }
