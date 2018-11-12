@@ -1,0 +1,16 @@
+@import './base';
+
+.login{
+    .login-wapper{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        .login-box{
+            
+            height: 20rem;
+            widows: 10rem;
+            background: red;
+        }
+    }
+}
