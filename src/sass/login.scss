@@ -8,9 +8,57 @@
         align-items: center;
         .login-box{
             
-            height: 20rem;
-            widows: 10rem;
-            background: red;
+            
+            .input-box{
+                display: flex;
+                flex-flow: column nowrap;
+                 .msg-tab{
+                     //height: 2rem;
+                     margin-bottom: 1rem;
+                   
+                     display: flex;
+                     justify-content: center;
+                     span{
+                         color: #2395ff;
+                        padding: .5rem 0 .5rem 0;
+                        border-bottom: 2px solid #2395ff;
+                     }
+                 }
+                 .logo{
+                     display: flex;
+                     justify-content: center;
+                     img{
+
+                         width: 185px;
+                         height: 95px;
+                     }
+                 }
+                >input{
+                   // background: red;
+                   outline:none;
+                   border-radius: 4px;
+                   border:1px solid #ccc;
+                   padding: .5rem 5rem .5rem 1rem;
+                    width: 24rem;
+                    height: 4.5rem;
+                    font-size: 1.2rem;
+                    color: #999;
+                    margin-bottom: 2rem;
+                    &:focus{
+                        border:1px solid #2395ff;
+                    }
+                }
+                .login-btn{
+                    color: white;
+                    background: #4cd96f;
+                    font-size: 1.6rem;
+                    border-radius: 4px;
+                    height: 4rem;
+                }
+                .user-name{
+
+                }
+            }
         }
     }
 }
