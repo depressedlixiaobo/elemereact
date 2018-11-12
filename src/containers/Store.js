@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import '../sass/store.scss'
+import plus from '../images/plus.svg'
+import plusCircled from '../images/plus-circled.svg'
+
 class Store extends Component {
     constructor(props) {
         super(props);
@@ -135,11 +138,18 @@ class Store extends Component {
                                     <dt>
                                         <div className='p-img'> <img src="//fuss10.elemecdn.com/2/85/4bd3e1f30c133edaac2168a58ef18jpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/" alt="" /> </div>
                                         <div className='prodcut-desc'>
-                                            <div className='p-desc1'>瓦香鸡（微辣）+米饭+可口可乐</div>
+                                            <div className='p-desc1'>瓦香鸡（微辣）+米饭+可米饭+可口可乐</div>
                                             <div className='p-desc2'>鸡腿肉搭配洋葱，大葱一起爆炒主要原料: 鸡肉</div>
                                             <div className='p-desc2'>月售800份 好评率98%</div>
                                             <div className='p-desc3'>4.8折</div>
-                                            <div className='p-price'>￥18.8  <del>¥38.8</del></div>
+                                            <div className='p-price'>
+                                                <div>
+                                                ￥18.8  <del>¥38.8</del>
+                                                </div>
+                                                <div className='add-pro'>
+                                                        <img className='add' src={plusCircled} /> 
+                                                </div>
+                                            </div>
                                         </div>
                                     </dt>
                                 ))
@@ -147,6 +157,7 @@ class Store extends Component {
                         </dl>
                     </div>
                   
+                   
             </React.Fragment>
         );
     }

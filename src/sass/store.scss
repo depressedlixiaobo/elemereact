@@ -118,7 +118,7 @@
           
           flex-grow: 1;
           flex-shrink: 0;
-          width: 6rem;
+          width: 7rem;
           font-size: 1.3rem;
           color:#999;
           li{
@@ -127,6 +127,7 @@
           }
       }
       dl{
+        flex-grow: 1;
           //flex-grow: 10;
           padding-left: .5rem;
           overflow: scroll;
@@ -141,7 +142,7 @@
               padding: .5rem 0 .5rem 0;
               .p-img{
                   flex-shrink: 0;
-                  width: 10rem;
+                  width: 8rem;
                   
                   img{
                       width: 100%;
@@ -153,14 +154,16 @@
                   flex-grow: 1;
                   display: flex;
                   flex-flow: column nowrap;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
                   >div{
                       padding-left: .5rem;
-                      width: 13rem;
+                     // width: 16rem;
                       height: 2rem;
                       overflow: hidden;
-                      white-space: nowrap;
-                      display:block;
-                      text-overflow: ellipsis;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
                       
                   }
                   .p-desc1{
@@ -176,8 +179,19 @@
                   }
                   .p-price{
                       color:rgb(255, 83, 57);
+                     display: flex;
+                     justify-content: space-between;
                       del{
                           color:#999;
+                      }
+                      .add-pro{
+                        padding-right: 1rem;
+                            .add{
+                                width: 2rem;
+                                height: 2rem;
+                             
+                            }
+
                       }
                   }
               }
