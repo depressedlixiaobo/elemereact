@@ -166,10 +166,10 @@ class Store extends Component {
                                     
                                 </div>
                                  <div className='show'>
-                                     为选购商品
-                                     <div>
+                                     <p>为选购商品</p>
+                                     <p>
                                      另需配送费5元
-                                     </div>
+                                     </p>
                                  </div>
                                  <div className='total'>
                                      ￥15起送
